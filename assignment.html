@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terror Media</title>
+    <link rel="stylesheet" href="newbach.css">
+    <script>
+        document.getElementById("button").onclick = function(){box1()};
+        function box1(){
+            document.getElementById("below-box1").style.display = "block";
+        }
+        function box2(){
+           document.getElementById("below-box2").style.display = "block";
+        }
+        function box3(){
+           document.getElementById("below-box3").style.display = "block";
+        }
+        
+    </script>
+</head>
+<body>
+     <div class="header">
+           <ul>
+            <a href="myhome.html" id="home-button"> <span>NonSo</span></a>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                 </li>
+                <li>
+                    <a href="assignment.html">Assignment</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+        </ul>
+     </div>
+     <div class="boxes">
+         <div class="box1">
+             <p>Write a function that concatenates a random string with your name
+                 passed as the parameter. Console log your output.
+             </p>
+             <button id="button" onclick="box1()">View Code</button>
+            
+         </div>
+         
+        <div class="box2">
+             <p>Create an array with nested objects (at least four nested objects) having the following properties 
+                 firstname, last name, likes, number with respective values of your choice for each.<br>
+                Create a function that takes in two parameters to represent first name and any other object key of your choice.
+                The function should check if the first name passed to the parameters exixts for the nested objects.
+            If it does exist, it should return the other object key value of your choice.<br>
+        <b>Requirements</b><br>
+        Your program should be able to handle cases where the values passed is not in the object created.
+        ie displaying error messages(firstname or likes does not exist)<br>
+        Your outputs should be console logged<br>
+        <b>Hint</b><br>
+        Use loop to iterate through the object created. <br>
+        Think about condition statements for handling error cases and checking if the first name and any other key value 
+        passed exists in the object created. </p>
+        <button id="button" onclick= "box2()">View Code</button>
+         </div>
+         <div class="box3">
+            <p> Have an array of random sentences in string.Then write a function that
+              accepts some inputs (passed to the parameters).<br>
+              Now randomly pick any of the sentences from the array and append 
+              to the parameters passed. You can choose to append before the sentence, 
+              middle of the sentence or the after the sentence to form a new sentence entirely.
+         </p> 
+         <button id="button" onclick= "box3()">View Code</button>
+            
+         </div>
+     </div>
+     <div class="answer-boxes">
+     <div id="below-box1" >
+        <code>
+            function myFuntion(name){<br><br>
+               console.log(name + "deserves the best of the best!");<br>
+            }<br><br>
+            myFuntion("Nonso");
+        </code>
+       </div>
+       <div id="below-box2">
+           <div id="first-belowbox2" >
+               <img src="..\Newbach\Assignmentonea.png" alt="First batch of code for assignment 2">
+           </div>
+           <div id="second-belowbox2">
+               <img src="Assignmentoneb.PNG" alt="Second batch of code for assignment 2">
+           </div>
+       </div>
+       <div id="below-box3">
+           <div id="first-belowbox3">
+               <img src="game app 1.PNG" alt="First game app code image">
+           </div>
+           <div id="second-belowbox3">
+               <img src="game app 2.PNG" alt="Second game app code image">
+           </div>
+           <div id="third-belowbox3">
+               <img src="game app 3.PNG" alt="Third game app code image">
+               </div>
+       </div>
+     </div>
+     <footer><span>NonSo&TRADE;</span></footer>
+       </body>
+     </html>
